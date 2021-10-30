@@ -1,13 +1,14 @@
 <template>
-  Hello World
+  <Form @form-submit="fetchRandomImages" />
 </template>
 
 <script>
+import Form from "./components/Form.vue";
 
 export default {
   name: 'App',
   components: {
-    
+    Form,
   }
 }
 </script>
@@ -19,6 +20,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+    padding-top: 60px;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    110deg,
+    rgba(63, 185, 132, 1) 0%,
+    rgba(55, 120, 110, 1) 50%,
+    rgba(49, 71, 94, 1) 100%
+  );
 }
 </style>
