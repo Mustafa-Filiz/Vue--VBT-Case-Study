@@ -1,16 +1,19 @@
 <template>
   <Form @form-submit="fetchRandomImages" />
+  <ResultArea v-if="images.length" :images="images" />
 </template>
 
 <script>
 import axios from "axios";
 import RandExp from "randexp";
 import Form from "./components/Form.vue";
+import ResultArea from "./components/ResultArea.vue";
 
 export default {
   name: "App",
   components: {
     Form,
+    ResultArea,
   },
   data() {
     return {
@@ -73,5 +76,16 @@ export default {
     rgba(55, 120, 110, 1) 50%,
     rgba(49, 71, 94, 1) 100%
   );
+}
+.searchbar {
+  width: 18rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  margin: 0.5rem;
+}
+.searchbar:focus {
+  outline: 3px solid #fefe9e;
 }
 </style>
