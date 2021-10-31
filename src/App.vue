@@ -24,7 +24,7 @@ export default {
     fetchRandomImages: async function (amount) {
       await axios
         .get(
-          `https://api.unsplash.com/photos/random?count=${amount}&client_id=SMLp9m3tYWy51OO-g1SO4nMDtPqyk97_szeF83DC9ck`
+          `https://api.unsplash.com/photos/random?count=${amount}&client_id=poLYf6iAsENJgGwVZaGNvokpJ1rJ_MZMj2PJZV5qz-U`
         )
         .then((res) => {
           this.images = res.data;
