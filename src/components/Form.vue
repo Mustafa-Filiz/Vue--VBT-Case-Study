@@ -16,6 +16,7 @@
       <option value="20"></option>
       <option value="30"></option>
     </datalist>
+    <button class="btn">Search</button>
   </form>
 </template>
 
@@ -34,5 +35,22 @@ export default {
 #label {
   color: white;
   font-size: 1.3rem;
+}
+.btn {
+  width: 18rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  background-color: bisque;
+}
+
+.btn:hover{
+  background-color: burlywood;
+}
+
+.btn:focus{
+  box-shadow: none;
 }
 </style>
